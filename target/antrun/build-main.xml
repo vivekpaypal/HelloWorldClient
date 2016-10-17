@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <mkdir dir="/Users/vivek/Documents/marsWorkspace/webserviceclient/target/generated-sources/jaxb"/>
+  <exec dir="/Users/vivek/Documents/marsWorkspace/webserviceclient/src/main/resources" executable="${env.JAVA_HOME}/bin/xjc.exe">
+    <arg value="-p"/>
+    <arg value="hello.world"/>
+    <arg value="-b"/>
+    <arg value="-wsdl"/>
+    <arg value="/Users/vivek/Documents/marsWorkspace/webserviceclient/src/main/xjb"/>
+    <arg value="-d"/>
+    <arg value="/Users/vivek/Documents/marsWorkspace/webserviceclient/target/generated-sources/jaxb"/>
+    <arg value="."/>
+  </exec>
+</target>
+</project>
