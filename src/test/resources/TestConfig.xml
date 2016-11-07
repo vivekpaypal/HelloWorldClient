@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" verbose="1" name="SoapServiceTests"
+
+	data-provider-thread-count="1" annotations="JDK">
+	
+	
+	
+	<test name="Test1" annotations="JDK" preserve-order="true">
+	<parameter name="url" value="http://ec2-54-162-115-190.compute-1.amazonaws.com:8181/HelloWorldService/hello?wsdl" />
+	
+		<classes>
+			<class name="webserviceclient.SoapServiceTests"/>
+		
+		</classes>
+		
+	</test>
+	
+	
+</suite>

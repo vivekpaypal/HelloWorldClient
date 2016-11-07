@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SoapServiceTests" duration-ms="1645" started-at="2016-11-01T20:15:28Z" finished-at="2016-11-01T20:15:30Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="1645" started-at="2016-11-01T20:15:28Z" finished-at="2016-11-01T20:15:30Z">
+      <class name="webserviceclient.SoapServiceTests">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:webserviceclient.SoapServiceTests@1efbd816]" name="init" is-config="true" duration-ms="1173" started-at="2016-11-02T01:45:28Z" finished-at="2016-11-02T01:45:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://ec2-54-162-115-190.compute-1.amazonaws.com:8181/HelloWorldService/hello?wsdl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testHello()[pri:0, instance:webserviceclient.SoapServiceTests@1efbd816]" name="testHello" duration-ms="458" started-at="2016-11-02T01:45:30Z" finished-at="2016-11-02T01:45:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHello -->
+      </class> <!-- webserviceclient.SoapServiceTests -->
+    </test> <!-- Test1 -->
+  </suite> <!-- SoapServiceTests -->
+</testng-results>
